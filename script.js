@@ -34,7 +34,7 @@ async function startWebcam() {
                 const formData = new FormData();
                 formData.append("frame", blob, "frame.jpg");
 
-                await fetch("http://192.168.178.255:8000/", {
+                await fetch("http://192.168.178.66:8000/", {
                     method: "POST",
                     body: formData
                 });
