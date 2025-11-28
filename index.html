@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam-Video anzeigen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        video {
+            border: 2px solid #333;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 640px;
+            height: auto;
+            background: black;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Webcam-Video</h1>
+<video id="webcam" autoplay playsinline></video>
+<p id="errorMsg" class="error"></p>
+
+<button onclick="startWebcam()">Start</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
