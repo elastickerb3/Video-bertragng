@@ -3,7 +3,7 @@ from flask import *
 import cv2
 import numpy as np
 
-app = Flask(__name__, static_folder="static")
+app = Flask(__name__)
 CORS(app)
 
 @app.route("/",methods=["POST"])
@@ -17,4 +17,4 @@ def Main():
     return "ok"
 
 if __name__ == "__main__":
-    app.run(port=8000)
+    app.run(port=8000,host="0.0.0.0")
