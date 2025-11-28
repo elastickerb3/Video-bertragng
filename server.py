@@ -1,10 +1,10 @@
-import flask_cors
+from flask_cors import CORS 
 from flask import *
 import cv2
 import numpy as np
 
 app = Flask(__name__, static_folder="static")
-flask_cors.CORS(app)
+CORS(app)
 
 @app.route("/",methods=["POST"])
 def Main():
